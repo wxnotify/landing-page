@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WxNotify</title>
+        <title>WxNotify - Personal Weather Notifications</title>
         <meta name="description" content="Personal severe weather notifications" />
         <link
             rel="shortcut icon"
@@ -15,7 +15,7 @@
         <meta property="og:title" content="Title of the project" />
         <meta property="og:description" content="Personal severe weather notifications" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.wxnotify.com" />
+        <meta property="og:url" content="https://wip.dev.wxnotify.com/" />
         <!--Replace with the current website url-->
         <meta property="og:image" content="" />
 
@@ -37,12 +37,13 @@
         <header
             class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
         >
-            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="http://www.wxnotify.com">
+            <a class="tw-flex tw-items-center tw-gap-2 tw-h-[50px] tw-p-[4px]" href="https://wip.dev.wxnotify.com/">
                 <img
                     src="./assets/logo/logo.png"
                     alt="logo"
-                    class="tw-object tw-h-full tw-w-full"
+                    class="tw-object tw-h-full tw-w-[50px]"
                 />
+                <span class="tw-text-white tw-font-medium">WxNotify</span>
             </a>
             <div
                 class="collapsible-header animated-collapse max-lg:tw-shadow-md"
@@ -52,10 +53,9 @@
                     class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
                 >
                     <a class="header-links" href="#features"> Features </a>
-                    <a class="header-links" href=""> About us </a>
-                    <a class="header-links" href="#pricing"> Pricing </a>
                     <a class="header-links" href=""> Solutions </a>
-                    
+                    <a class="header-links" href="#pricing"> Pricing </a>
+                    <a class="header-links" href=""> About </a>
                     <a class="header-links" href=""> Company </a>
                 </div>
                 <div
@@ -90,16 +90,16 @@
                     class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
                 >
                     <div
-                        class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                        class="reveal-up gradient-text tw-text-center tw-text-5xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
                     >
-                        <span class=""> Personal Severe Weather Notifications </span>
+                        <span class=""> Never be caught off guard by severe weather again </span>
                     </div>
                     <div
                         class="reveal-up tw-mt-10 tw-max-w-[650px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
                     >
-                        WxNotify is a service that sends notifications for weather, law enforcement, and governmental alerts. Subscribers create alerts based on what 
-                        they want to be alerted for, the locations for where subscribers want to be notified, when they want to be alerted, and finally, how they want to be
-                        alerted. (Email, Pushover, Slack, etc.)
+                        WxNotify is a service that sends notifications for all types of weather, in addition to law enforcement and governmental alerts. Subscribers may create alerts based on
+                        the types of things they want to be alerted for, the locations for where subscribers want to be notified, when they want to be alerted, and finally how they want to be
+                        alerted. (Email, Pushover, Slack, etc.) The service then takes care of figuring out which subscribers should be notified when a matching alert is issued.
                     </div>
 
                     <div
@@ -172,7 +172,7 @@
                                 class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
                             >
                                 <i
-                                    class="bi bi-rocket-takeoff-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                    class="bi bi-sliders tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
                                 ></i>
                             </div>
                         </div>
@@ -180,11 +180,10 @@
                             <h3
                                 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
                             >
-                                Minimize hours spent
+                                Numerous alerting options
                             </h3>
                             <div class="tw-text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit.
+                                Customize notifications using a giant number of different options.
                             </div>
                         </div>
                     </div>
@@ -198,7 +197,7 @@
                                 class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
                             >
                                 <i
-                                    class="bi bi-layout-sidebar-inset tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                    class="bi bi-magic tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
                                 ></i>
                             </div>
                         </div>
@@ -209,8 +208,7 @@
                                 Simple to use
                             </h3>
                             <div class="tw-text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit.
+                                The newly-designed dashboard simplifies the process of setting up alert notifications.
                             </div>
                         </div>
                     </div>
@@ -224,7 +222,7 @@
                                 class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
                             >
                                 <i
-                                    class="bi bi-lightning-charge-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                    class="bi bi-shield-lock tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
                                 ></i>
                             </div>
                         </div>
@@ -232,11 +230,10 @@
                             <h3
                                 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
                             >
-                                Speed up your development
+                                Secure platform
                             </h3>
                             <div class="tw-text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit.
+                                Utilizes web security features including state of the art encryption.
                             </div>
                         </div>
                     </div>
@@ -266,17 +263,16 @@
                         class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl">
-                            <i class="bi bi-globe"></i>
+                            <i class="bi bi-code-slash"></i>
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
                             <h3 class="tw-text-2xl max-md:tw-text-xl">
-                                Global
+                                Modern Tech Stack
                             </h3>
                             <p class="tw-text-gray-300 max-md:tw-text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi quasi consequuntur,
-                                distinctio
+                                Built upon a 100% open-source technology stack. Website is fully-responsive, which looks and
+                                functions similarly on any device; whether it be a desktop, smart phone, or tablet.
                             </p>
                         </div>
                     </div>
@@ -285,17 +281,15 @@
                         class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl">
-                            <i class="bi bi-bar-chart-fill"></i>
+                            <i class="bi bi-clock"></i>
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
                             <h3 class="tw-text-2xl max-md:tw-text-xl">
-                                Insights
+                                Time-sensitive
                             </h3>
                             <p class="tw-text-gray-300 max-md:tw-text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi quasi consequuntur,
-                                distinctio laboriosam
+                                The service always relays notifications from the National Weather Service within seconds of receiving them.
                             </p>
                         </div>
                     </div>
@@ -309,12 +303,11 @@
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
                             <h3 class="tw-text-2xl max-md:tw-text-xl">
-                                Cloud backup
+                                Cloud-based
                             </h3>
                             <p class="tw-text-gray-300 max-md:tw-text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi quasi consequuntur,
-                                distinctio laboriosam
+                                Runs entirely on cloud servers, which are continuously monitored for environmental issues, including
+                                power, flooding, and network problems.
                             </p>
                         </div>
                     </div>
@@ -328,12 +321,11 @@
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
                             <h3 class="tw-text-2xl max-md:tw-text-xl">
-                                2 Factor Authentication
+                                2-Factor Authentication
                             </h3>
                             <p class="tw-text-gray-300 max-md:tw-text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi quasi consequuntur,
-                                distinctio laboriosam
+                                Offering the latest in web security, this feature helps protect your account in the event
+                                your username and password is compromised.
                             </p>
                         </div>
                     </div>
@@ -342,7 +334,7 @@
                         class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl">
-                            <i class="bi bi-sliders"></i>
+                            <i class="bi bi-plug"></i>
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
@@ -350,9 +342,7 @@
                                 3rd party integrations
                             </h3>
                             <p class="tw-text-gray-300 max-md:tw-text-sm">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi quasi consequuntur,
-                                distinctio laboriosam
+                                Connect applications using WxNotify's RESTful API, or integrate its data with other weather-related applications. 
                             </p>
                         </div>
                     </div>
@@ -361,17 +351,15 @@
                         class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
                     >
                         <div class="tw-text-4xl max-md:tw-text-2xl">
-                            <i class="bi bi-gear-fill"></i>
+                            <i class="bi bi-cloud-sun"></i>
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
                             <h3 class="tw-text-2xl max-md:tw-text-xl">
-                                Advanced configurations
+                                Daily forecasts
                             </h3>
-                            <p class="tw-text-sm tw-text-gray-300">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Animi quasi consequuntur,
-                                distinctio laboriosam
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Receive the current conditions and the outlook for the next 7 days. Always know whether to grab that umbrella before heading out the door!
                             </p>
                         </div>
                     </div>
@@ -400,7 +388,7 @@
                     class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
                 >
                     <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
-                        Lots of notification options
+                        New Contact Options!
                     </h3>
 
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
@@ -411,9 +399,8 @@
                         <span
                             class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Reiciendis commodi temporibus at? Aspernatur,
-                            a necessitatibus?
+                            WxNotify uses the open-source <a style="color:#777;" href="https://github.com/caronc/apprise-api">Apprise API</a>
+                            to offer a HUGE number of Contact options for Alerts.
                         </span>
                     </div>
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
@@ -424,9 +411,19 @@
                         <span
                             class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Reiciendis commodi temporibus at? Aspernatur,
-                            a necessitatibus?
+                            The service also integrates with the free geo-tracking service <a style="color:#777;" href="https://www.traccar.org">Traccar</a>
+                            to allow subscribers to create location-aware Alerts so they can always stay up to date.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Native Mobile Apps
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                            Coming soon!
                         </span>
                     </div>
                 </div>
@@ -665,7 +662,7 @@
                 class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
             >
                 <div
-                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-primary tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
                 >
                     <h3 class="">
                         <span class="tw-text-5xl tw-font-semibold">Free</span>
@@ -681,6 +678,7 @@
                         <li>10 Locations, Contacts, Schedules, and Product Lists</li>
                         <li>10 Traccar devices</li>
                         <li>Daily Forecasts</li>
+                        <li>Convective Outlook Alerts</li>
                     </ul>
                     <a
                         href="https://app.wxnotify.com/dashboard/signup"
@@ -690,36 +688,37 @@
                     </a>
                 </div>
                 <div
-                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-primary tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px] tw-grayscale tw-opacity-20"
                 >
                     <h3 class="">
-                        <span class="tw-text-5xl tw-font-semibold">$25</span>
+                        <span class="tw-text-5xl tw-font-semibold">$10</span>
                         <span class="tw-text-2xl tw-text-gray-400">/mo</span>
                     </h3>
                     <p class="tw-mt-3 tw-text-center tw-text-gray-300">
-                        Expanded options for notifications
+                        Best value for expanded options
                     </p>
                     <hr />
                     <ul
                         class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
                     >
                         <li>25 Alerts</li>
-                        <li>50 Locations, Contacts, Schedules, and Product Lists</li>
-                        <li>20 Traccar devices</li>
+                        <li>25 Locations, Contacts, Schedules, and Product Lists</li>
+                        <li>30 Traccar devices</li>
                         <li>Daily Forecasts</li>
+                        <li>Convective Outlook Alerts</li>
                     </ul>
-                    <a
-                        href="https://app.wxnotify.com/dashboard/signup"
+                    <button
+                        disabled
                         class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
                     >
-                        Get now
-                    </a>
+                        Coming soon!
+                    </button>
                 </div>
                 <div
-                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px] tw-grayscale tw-opacity-20"
                 >
                     <h3 class="">
-                        <span class="tw-text-5xl tw-font-semibold">Contact Us</span>
+                        <span class="tw-text-5xl tw-font-semibold">Contact Me</span>
                     </h3>
                     <p class="tw-mt-3 tw-text-center tw-text-gray-300">
                         Offers the most notification options
@@ -732,13 +731,14 @@
                         <li>Unlimited Locations, Contacts, Schedules, and Product Lists</li>
                         <li>Unlimited Traccar devices</li>
                         <li>Daily Forecasts</li>
+                        <li>Convective Outlook Alerts</li>
                     </ul>
-                    <a
-                        href="https://app.wxnotify.com/dashboard/signup"
+                    <button
+                        disabled
                         class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
                     >
-                        Get now
-                    </a>
+                        Coming soon!
+                    </button>
                 </div>
             </div>
         </section>
@@ -858,25 +858,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>Where did the name WxNotify come from?</span>
-                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
-                    </div>
-                    <div class="content">
-                        "Wx" is often used throughout the weather community as an abbreviation for weather. Since the service notifies for weather, it seemed like a natural fit.
-                    </div>
-                </div>
-
-                <div
-                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
-                >
-                    <div
-                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
-                    >
                         <span>Why do I need WxNotify if I already have Wireless Emergency Alerts sent to my phone?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        While it is true that all cell phone users are now receiving Wireless Emergency Alerts (WEA) for short-fuse warnings, such as Tornado and Flash Flood Warnings, users may want more granularity of the types of alerts they are alerted for. WxNotify is the perfect fit for those who want more control over all of their weather-related alerts. 
+                        While it is true that all cell phone users are now receiving Wireless Emergency Alerts (WEA) for severe weather including tornadoes, hurricanes, and flash floods, users may want greater granularity in the types of alerts they receive. WxNotify is the perfect fit for those who want more control over all of their weather-related alerts. 
                     </div>
                 </div>
 
@@ -890,7 +876,7 @@
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        Unfortunately, as of spring of 2025, cell phone providers such as AT&T and Verizon have stopped offering free SMS Gateways, therefore the only way to send SMS messages to cell phones are through paid providers like Twilio or AWS.
+                        Cell phone providers such as AT&T, Verizon, and T-mobile are beginning to retire their free SMS Gateways. Because of this, the only way to send SMS messages to cell phones are through paid providers like Twilio or AWS.
                     </div>
                 </div>
 
@@ -904,7 +890,21 @@
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        Not yet, but this is in the works! Please stay tuned!
+                        Not yet, but this is currently in the works! Please stay tuned to this website for future annoucements!
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Where did the name WxNotify come from?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        "Wx" is often used throughout the weather community as an abbreviation for weather. Since the service sends notifications for weather, the name seemed like a natural fit.
                     </div>
                 </div>
             </div>
@@ -916,10 +916,10 @@
                     Still have questions?
                 </div>
                 <a
-                    href="/contact-us.html"
+                    href="/contact.html"
                     class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
                 >
-                    Contact Us
+                    Contact Me
                 </a>
             </div>
         </section>
@@ -993,17 +993,16 @@
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
                     <a href="https://status.wxnotify.com" class="footer-link">Service Status</a>
                     <a href="/integrations.html" class="footer-link">Integrations</a>
-                    <a href="/change-logs.html" class="footer-link">Change logs</a>
-                    <a href="/contact.html" class="footer-link">Contact</a>
+                    <a href="/roadmap.html" class="footer-link">Roadmap</a>
+                    <a href="/contact.html" class="footer-link">Contact Me</a>
                 </div>
             </div>
 
             <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
                 <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="/about.html" class="footer-link">About us</a>
-                    <a href="/faq.html" class="footer-link">FAQ</a>
-                    <a href="https://news.wxnotify.com" class="footer-link">Blogs</a>
+                    <a href="/about.html" class="footer-link">About</a>
+                    <a href="https://news.wxnotify.com" class="footer-link">News</a>
                     <a href="/privacy-policy.html" class="footer-link">Privacy policy</a>
                     <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
                     <a href="/terms-of-use.html" class="footer-link">Terms of Use</a>
