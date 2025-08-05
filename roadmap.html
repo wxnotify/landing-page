@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WxNotify</title>
-        <meta name="description" content="" />
+        <title>Roadmap - WxNotify - Personal Weather Notifications</title>
+        <meta name="description" content="See what's coming next for WxNotify - upcoming features and improvements" />
         <link
             rel="shortcut icon"
             href="./assets/logo/logo.png"
@@ -12,14 +12,12 @@
         />
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:title" content="Title of the project" />
-        <meta property="og:description" content="" />
+        <meta property="og:title" content="WxNotify Roadmap - What's Coming Next" />
+        <meta property="og:description" content="See what's coming next for WxNotify - upcoming features and improvements" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://github.com/jimbuitt" />
-        <!--Replace with the current website url-->
+        <meta property="og:url" content="https://www.wxnotify.com/roadmap" />
         <meta property="og:image" content="" />
 
-        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
         <link rel="stylesheet" href="./css/tailwind-build.css">
         <link rel="stylesheet" href="css/index.css" />
 
@@ -30,6 +28,35 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+
+        <style>
+            .timeline-item {
+                opacity: 0.7;
+                transition: all 0.3s ease;
+            }
+            .timeline-item.active {
+                opacity: 1;
+                transform: scale(1.02);
+            }
+            .timeline-line {
+                background: linear-gradient(180deg, #7e22ce 0%, #3b82f6 50%, #10b981 100%);
+            }
+            .status-badge {
+                transition: all 0.3s ease;
+            }
+            .status-in-progress {
+                background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            }
+            .status-planned {
+                background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            }
+            .status-completed {
+                background: linear-gradient(135deg, #10b981, #059669);
+            }
+            .status-research {
+                background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            }
+        </style>
     </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
@@ -37,7 +64,7 @@
         <header
             class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
         >
-            <a class="tw-flex tw-items-center tw-gap-2 tw-h-[50px] tw-p-[4px]" href="https://wip.dev.wxnotify.com/">
+            <a class="tw-flex tw-items-center tw-gap-2 tw-h-[50px] tw-p-[4px]" href="/">
                 <img
                     src="./assets/logo/logo.png"
                     alt="logo"
@@ -52,11 +79,11 @@
                 <div
                     class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
                 >
-                    <a class="header-links" href="#features"> Features </a>
-                    <a class="header-links" href="#pricing"> Pricing </a>
-                    <a class="header-links" href="#faq"> FAQ </a>
-                    <a class="header-links" href="/about.html"> About </a>
-                    <a class="header-links" href="/integrations.html"> Integraions </a>
+                    <a class="header-links" href="/#features"> Features </a>
+                    <a class="header-links" href="/about.html"> About us </a>
+                    <a class="header-links" href="/#pricing"> Pricing </a>
+                    <a class="header-links" href="/integrations.html"> Solutions </a>
+                    <a class="header-links" href="/contact.html"> Company </a>
                 </div>
                 <div
                     class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
@@ -79,19 +106,321 @@
             ></button>
         </header>
 
+        <!-- Hero Section -->
         <section
-            class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
-            id="hero-section"
+            class="hero-section tw-relative tw-flex tw-min-h-[60vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden tw-pt-[80px]"
         >
             <div
-                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+                class="tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
             >
-
-                blah blah blah
-
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up gradient-text tw-text-center tw-text-5xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span>Our Roadmap</span>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[650px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Discover what's coming next for WxNotify. We're constantly working to improve your weather notification experience with new features, integrations, and capabilities. Here's what we have planned for the future.
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Current Quarter Section -->
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Q1 2025 - In Progress
+                    </h2>
+                    <p class="tw-text-gray-400 tw-max-w-[600px]">
+                        Features currently in active development that you can expect to see soon
+                    </p>
+                </div>
+
+                <div class="tw-mt-6 tw-flex tw-max-w-[90%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                    <div class="reveal-up timeline-item active tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-in-progress tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                IN PROGRESS
+                            </div>
+                            <i class="bi bi-phone tw-text-4xl tw-text-blue-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Native Mobile Apps
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                iOS and Android applications with push notifications, location tracking, and offline capabilities. Beta testing begins in March 2025.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">iOS</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Android</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Push Notifications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up timeline-item active tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-in-progress tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                IN PROGRESS
+                            </div>
+                            <i class="bi bi-graph-up tw-text-4xl tw-text-blue-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Enhanced Analytics
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Detailed reporting on notification delivery, weather patterns in your area, and historical alert data with interactive charts and trends.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Charts</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Trends</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Reports</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up timeline-item active tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-in-progress tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                IN PROGRESS
+                            </div>
+                            <i class="bi bi-globe tw-text-4xl tw-text-blue-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                International Support
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Expanding beyond the US to include weather services from Canada, UK, Australia, and European weather agencies.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Canada</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">UK</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">EU</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Q2 2025 Section -->
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Q2 2025 - Planned
+                    </h2>
+                    <p class="tw-text-gray-400 tw-max-w-[600px]">
+                        Next phase of development with advanced features and integrations
+                    </p>
+                </div>
+
+                <div class="tw-mt-6 tw-flex tw-max-w-[90%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-planned tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                PLANNED
+                            </div>
+                            <i class="bi bi-robot tw-text-4xl tw-text-blue-500"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                AI-Powered Predictions
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Machine learning models to provide personalized weather insights, predict when you'll need specific alerts, and suggest optimal notification timing.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">ML</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Predictions</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Smart Timing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-planned tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                PLANNED
+                            </div>
+                            <i class="bi bi-people tw-text-4xl tw-text-blue-500"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Family & Team Plans
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Manage notifications for multiple family members or team members with shared locations, group alerts, and centralized billing.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Groups</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Shared</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Billing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-planned tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                PLANNED
+                            </div>
+                            <i class="bi bi-smartwatch tw-text-4xl tw-text-blue-500"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Wearable Integration
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Support for Apple Watch, Wear OS, and Fitbit devices with haptic feedback, quick weather glances, and emergency alerts.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Apple Watch</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Wear OS</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Fitbit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Q3 2025 Section -->
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Q3 2025 - Research & Planning
+                    </h2>
+                    <p class="tw-text-gray-400 tw-max-w-[600px]">
+                        Innovative features we're exploring and validating with our community
+                    </p>
+                </div>
+
+                <div class="tw-mt-6 tw-flex tw-max-w-[90%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-research tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                RESEARCH
+                            </div>
+                            <i class="bi bi-mic tw-text-4xl tw-text-purple-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Voice Assistant Integration
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                "Hey Siri/Google/Alexa, what weather alerts do I have?" Voice commands for checking alerts, updating settings, and getting weather briefings.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Siri</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Google</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Alexa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-research tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                RESEARCH
+                            </div>
+                            <i class="bi bi-camera tw-text-4xl tw-text-purple-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Weather Camera Network
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Community-driven weather camera network allowing users to share live conditions and view real-time weather in their area from multiple angles.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Live Cameras</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Community</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-research tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                RESEARCH
+                            </div>
+                            <i class="bi bi-car-front tw-text-4xl tw-text-purple-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Vehicle Integration
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Integration with CarPlay, Android Auto, and Tesla vehicles for in-car weather alerts, route-based notifications, and driving condition warnings.
+                            </p>
+                            <div class="tw-flex tw-gap-2 tw-text-sm tw-text-gray-400">
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">CarPlay</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Android Auto</span>
+                                <span class="tw-bg-gray-700 tw-rounded-full tw-px-2 tw-py-1">Tesla</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recently Completed Section -->
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Recently Completed
+                    </h2>
+                    <p class="tw-text-gray-400 tw-max-w-[600px]">
+                        Features we've successfully delivered in recent months
+                    </p>
+                </div>
+
+                <div class="tw-mt-6 tw-flex tw-max-w-[90%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                    <div class="reveal-up timeline-item tw-flex tw-w-[450px] tw-gap-6 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-w-[320px]">
+                        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+                            <div class="status-badge status-completed tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-text-white">
+                                COMPLETED
+                            </div>
+                            <i class="bi bi-palette tw-text-4xl tw-text-green-400"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                                Redesigned Dashboard
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Brand new user interface with improved navigation, better mobile responsiveness, and enhanced accessibility features.
+                            </p>
+                            <div class="tw-text-sm tw-text-green-400">
+                                ✓ Launched December 2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Footer -->
         <footer
             class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
         >
@@ -104,11 +433,6 @@
                     srcset=""
                     class="tw-max-w-[120px]"
                 />
-                <div>
-                    Franklin, TN
-                    <br />
-                    United States
-                </div>
                 <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
                 <div class="tw-flex tw-gap-4 tw-text-2xl">
                     <a
@@ -125,27 +449,29 @@
                         <i class="bi bi-instagram"></i>
                     </a>
                 </div>
+                <div>
+                    <small>&copy; 2025 WxNotify</small>
+                </div>
             </div>
 
             <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
                 <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="/use-cases.html" class="footer-link">Use cases</a>
+                    <a href="https://status.wxnotify.com" class="footer-link">Service Status</a>
                     <a href="/integrations.html" class="footer-link">Integrations</a>
-                    <a href="/change-logs.html" class="footer-link">Change logs</a>
-                    <a href="/blogs.html" class="footer-link">Blogs</a>
-                    <a href="/contact-us.html" class="footer-link">Contact</a>
+                    <a href="/roadmap.html" class="footer-link">Roadmap</a>
+                    <a href="/contact.html" class="footer-link">Contact Me</a>
                 </div>
             </div>
 
             <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
                 <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="/about-us.html" class="footer-link">About us</a>
-                    <a href="/faq.html" class="footer-link">FAQ</a>
-                    <a href="/contact-us.html" class="footer-link">Contact Us</a>
-                    <a href="/blogs.html" class="footer-link">Blogs</a>
+                    <a href="/about.html" class="footer-link">About</a>
+                    <a href="https://news.wxnotify.com" class="footer-link">Blogs</a>
                     <a href="/privacy-policy.html" class="footer-link">Privacy policy</a>
+                    <a href="/disclaimer.html" class="footer-link">Disclaimer</a>
+                    <a href="/terms-of-use.html" class="footer-link">Terms of Use</a>
                 </div>
             </div>
         </footer>
@@ -165,4 +491,5 @@
     ></script>
 
     <script src="./index.js"></script>
+</body>
 </html>
