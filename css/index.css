@@ -196,7 +196,7 @@ header > .collapsible-header{
     padding: 0px 18px;
     color: #e4e4e4;
     height: max-content;
-    overflow: hidden;
+    overflow: scroll;
     background-color: transparent;
     text-align: justify;
     max-height: 0px;
