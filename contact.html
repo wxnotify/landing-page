@@ -29,6 +29,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.css" />
     </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
@@ -112,16 +114,20 @@
                 <div class="tw-w-full lg:tw-w-[400px]">
                     <div class="reveal-up tw-flex tw-flex-col tw-gap-8">
                         <div class="tw-text-center lg:tw-text-left">
-                            <h2 class="tw-text-3xl tw-font-medium tw-text-gray-200 tw-mb-4">Send Me a Message</h2>
+                            <h2 class="tw-text-3xl tw-font-medium tw-text-gray-200 tw-mb-4">Send Us a Message</h2>
                             <p class="tw-text-gray-300">
-                                Please use the form below to send the WxNotify administrator a message.
+                                Please use the form below to send the WxNotify administrators a message.
                             </p>
                             <p class="tw-text-sm tw-text-gray-400 tw-mt-2">
                                 * Message can be up to 1024 characters.
                             </p>
                         </div>
 
-                        <form class="tw-flex tw-flex-col tw-gap-6 tw-p-8 tw-rounded-lg tw-border tw-border-outlineColor tw-bg-secondary">
+                        <form
+                            class="tw-flex tw-flex-col tw-gap-6 tw-p-8 tw-rounded-lg tw-border tw-border-outlineColor tw-bg-secondary"
+                            method="POST"
+                            action="https://app.wxnotify.com/contact"
+                        >
                             <div class="tw-flex tw-flex-col tw-gap-2">
                                 <label for="name" class="tw-text-gray-300 tw-font-medium">Name *</label>
                                 <input
@@ -180,6 +186,12 @@
                                     <span id="char-count">0</span>/1024 characters
                                 </div>
                             </div>
+
+                            <input
+                                type="hidden"
+                                id="honeypot"
+                                name="honeypot"
+                            />
 
                             <button
                                 type="submit"
@@ -398,5 +410,18 @@
     ></script>
 
     <script src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.min.js"></script>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        if (urlParams.has('response')) {
+            new Notify({
+                autotimeout: 5000,
+                text: urlParams.get('response'),
+            })
+        }
+    </script>
 </body>
 </html>
