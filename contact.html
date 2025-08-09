@@ -193,6 +193,8 @@
                                 name="honeypot"
                             />
 
+                            <div id="example-container"></div>
+
                             <button
                                 type="submit"
                                 class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] tw-w-full tw-text-lg"
@@ -422,6 +424,22 @@
                 text: urlParams.get('response'),
             })
         }
+    </script>
+
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
+        defer
+    ></script>
+
+    <script>
+        window.onloadTurnstileCallback = function () {
+        turnstile.render("#example-container", {
+            sitekey: "0x4AAAAAABgZxgdszKFXXxJM",
+            callback: function (token) {
+                console.log(`Challenge Success ${token}`);
+            },
+        });
+        };
     </script>
 </body>
 </html>
