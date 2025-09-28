@@ -444,38 +444,39 @@
                     
                     <div class="api-endpoint method-get">
                         <div class="tw-text-green-400 tw-font-bold tw-mb-1">GET</div>
-                        <div class="tw-text-gray-300">/api/v1/alerts</div>
-                        <div class="tw-text-gray-500 tw-text-sm tw-mt-1">Retrieve all active alerts for your account</div>
+                        <div class="tw-text-gray-300">/v1/alert</div>
+                        <div class="tw-text-gray-500 tw-text-sm tw-mt-1">Retrieve all alerts for your account</div>
                     </div>
 
                     <div class="api-endpoint method-post">
                         <div class="tw-text-blue-400 tw-font-bold tw-mb-1">POST</div>
-                        <div class="tw-text-gray-300">/api/v1/alerts</div>
+                        <div class="tw-text-gray-300">/v1/alert</div>
                         <div class="tw-text-gray-500 tw-text-sm tw-mt-1">Create a new weather alert</div>
                     </div>
 
                     <div class="api-endpoint method-get">
                         <div class="tw-text-green-400 tw-font-bold tw-mb-1">GET</div>
-                        <div class="tw-text-gray-300">/api/v1/weather/current/{location}</div>
+                        <div class="tw-text-gray-300">/v1/current_conditions/{location}</div>
                         <div class="tw-text-gray-500 tw-text-sm tw-mt-1">Get current weather conditions</div>
                     </div>
 
                     <div class="api-endpoint method-get">
                         <div class="tw-text-green-400 tw-font-bold tw-mb-1">GET</div>
-                        <div class="tw-text-gray-300">/api/v1/notifications/history</div>
-                        <div class="tw-text-gray-500 tw-text-sm tw-mt-1">View notification delivery history</div>
+                        <div class="tw-text-gray-300">/v1/alert_log</div>
+                        <div class="tw-text-gray-500 tw-text-sm tw-mt-1">View alert log</div>
                     </div>
 
                     <div class="tw-mt-4">
                         <div class="code-block">
-                            <div class="tw-text-gray-400 tw-mb-2"># Example: Create a new weather alert</div>
-                            <div class="tw-text-blue-300">curl -X POST https://api.wxnotify.com/v1/alerts \</div>
+                            <div class="tw-text-gray-400 tw-mb-2"># Example: Create a new Alert</div>
+                            <div class="tw-text-blue-300">curl -X POST https://api.wxnotify.com/v1/alert \</div>
                             <div class="tw-text-blue-300 tw-ml-4">-H "Authorization: Bearer YOUR_API_KEY" \</div>
                             <div class="tw-text-blue-300 tw-ml-4">-H "Content-Type: application/json" \</div>
                             <div class="tw-text-blue-300 tw-ml-4">-d '{</div>
-                            <div class="tw-text-green-300 tw-ml-8">"name": "Home Tornado Alert",</div>
-                            <div class="tw-text-green-300 tw-ml-8">"location": "Franklin, TN",</div>
-                            <div class="tw-text-green-300 tw-ml-8">"types": ["tornado_warning"],</div>
+                            <div class="tw-text-green-300 tw-ml-8">"contacts": ["contact_uuid1", "contact_uuid2"],</div>
+                            <div class="tw-text-green-300 tw-ml-8">"locations": ["location_uuid1", "location_uuid2"],</div>
+                            <div class="tw-text-green-300 tw-ml-8">"prodlist_id": ["prodlist_uuid"],</div>
+                            <div class="tw-text-green-300 tw-ml-8">"schedule_id": ["schedule_uuid"],</div>
                             <div class="tw-text-green-300 tw-ml-8">"enabled": true</div>
                             <div class="tw-text-blue-300 tw-ml-4">}'</div>
                         </div>
