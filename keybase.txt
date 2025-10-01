@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/jbuitt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.wxnotify.com
+  * I am jbuitt (https://keybase.io/jbuitt) on keybase.
+  * I have a public key ASAPsmU72RGHouj0vSdvo9tW3SLeIaz2wZb5hk71hCCUgwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101c38f59de25093205e4b65ef77e8fbe010761ffc03f4b1668c655c87fc379e3da0a",
+      "host": "keybase.io",
+      "kid": "01200fb2653bd91187a2e8f4bd276fa3db56dd22de21acf6c196f9864ef5842094830a",
+      "uid": "983e57bfbba3caacf235a8278c786700",
+      "username": "jbuitt"
+    },
+    "merkle_root": {
+      "ctime": 1738778736,
+      "hash": "17752b226af6baf2f7f2efd10dd2fb898e6770a988d8e5f9033bc1824b560c58a1af4abed74ced7ff025f8c2b1a575169bafd4837f91f8a25bde069df76d8f04",
+      "hash_meta": "6d3ee56c540695c0eb024bfc73eef964014069ca4b844465915dfcffa8c8abf4",
+      "seqno": 26520625
+    },
+    "service": {
+      "entropy": "OGxiotM9YwTAhIqc1/i1Uwoa",
+      "hostname": "www.wxnotify.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.0"
+  },
+  "ctime": 1738778762,
+  "expire_in": 504576000,
+  "prev": "ddca6eccc86b2468bb6e18c1f02221933927b048997fc118d5423fbcc06d8b42",
+  "seqno": 62,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgD7JlO9kRh6Lo9L0nb6PbVt0i3iGs9sGW+YZO9YQglIMKp3BheWxvYWTESpcCPsQg3cpuzMhrJGi7bhjB8CIhkzknsEiZf8EY1UI/vMBti0LEIM8kisjY7lHSEQ4k9ptgd9LAYQTTOcdcuFDQKYp7Nhr9AgHCo3NpZ8RAeg367dzPLPX4yVuhmB+/tsupkX/RZnFE4Y61kuGV0vu3xi7Dx0FYGUczuc06m6E2RMIbqgl17QGh4MwKxbTXAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMFto+9K3F84BfDlpSCmKK6YFhXdAkmUPe9RV6ZwCR88o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jbuitt
+
+==================================================================
+
